@@ -46,7 +46,7 @@ Install Odoo 14.0
   ```bash
   wkhtmltopdf --version
   ```
-- Installing Odoo 14 di ubuntu
+- masuk ke folder Odoo 14 kamu dengan syntax berikut
   ```bash
   sudo su - odoo14
   ```
