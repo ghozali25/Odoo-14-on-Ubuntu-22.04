@@ -136,7 +136,7 @@ Install Odoo 14.0
   sudo journalctl -u odoo14
   ```
 
-- great finish odoo setup *cheers*
+- Congratulations! You have successfully installed Odoo.  *cheers*
   - you can check your browser
     ```bash
     URL http://127.0.0.1:8069
