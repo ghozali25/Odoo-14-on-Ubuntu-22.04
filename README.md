@@ -73,11 +73,11 @@ Install Odoo 14.0
   ```bash
   deactivate
   ```
-  - make folder for custom addons
+- make folder for custom addons
   ```bash
   mkdir /opt/odoo14/custom-addons
   ```
-  - let us exit to odoo14 user
+- let us exit to odoo14 user
   ```bash
   exit
   ```
