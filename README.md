@@ -65,7 +65,7 @@ Install Odoo 14.0
   python3 -m venv myodoo14-venv
   source myodoo14-venv/bin/activate
   ```
-  dan install odoo14 dependencies (wait until finish)
+  dan install odoo14 dependencies "tungu hingga selesai"
   ```bash
   (venv) $ pip3 install wheel
   (venv) $ pip3 install -r odoo/requirements.txt
