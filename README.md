@@ -41,5 +41,17 @@ Install Odoo 14.0
   sudo apt install ./wkhtmltox_0.12.6.1-2.jammy_amd64.deb
   sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin/wkhtmltopdf
   ```
+  and check after finish
+  ```bash
+  wkhtmltopdf --version
+  ```
+- Installing Odoo 14 on Ubuntu
+  ```bash
+  sudo su - odoo14
+  ```
+  download from odoo community (if you upgrade for new version you can replace name 14 to nwe version)
+  ```bash
+  git clone https://www.github.com/odoo/odoo --depth 1 --branch 14.0 /opt/odoo14/odoo
+  ```
 
 
