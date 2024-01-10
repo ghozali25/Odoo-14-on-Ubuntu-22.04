@@ -35,6 +35,7 @@ Install Odoo 14.0
   ```bash
    wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
   ```
+  install wkhtmltopdf
   ```bash
   chmod +x wkhtmltox_0.12.6.1-2.jammy_amd64.deb
   sudo apt install ./wkhtmltox_0.12.6.1-2.jammy_amd64.deb
