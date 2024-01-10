@@ -88,7 +88,7 @@ Install Odoo 14.0
   - add this statement on odoo14.conf
     ```bash
     [options]
-    ; This is the password that allows database operations:
+    ;This is the password that allows database operations:
     admin_passwd = admin
     db_host = False
     db_port = False
