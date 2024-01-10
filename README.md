@@ -1,4 +1,4 @@
-# Odoo-14-on-Ubuntu or Debian Based
+# Odoo-14.0-on-Ubuntu or Debian Based
 <p align="center"><b>Created By Ahmad Ghozali</b></p>
   
 Install Odoo 14.0
