@@ -141,7 +141,8 @@ Install Odoo 14.0
     ```bash
     URL http://127.0.0.1:8069
     ```
-  
+https://github.com/ghozali25/Odoo-14-on-Ubuntu-22.04/blob/main/odoo14.png
+
   
 
 
