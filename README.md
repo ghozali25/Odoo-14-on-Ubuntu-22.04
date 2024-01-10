@@ -123,6 +123,18 @@ Install Odoo 14.0
       [Install]
       WantedBy=multi-user.target
       ```
+      and save (Ctrl+X => Yes (Y) => Enter
+
+- and now reload service system and enable service your odoo
+  ```bash
+  sudo systemctl daemon-reload
+  sudo systemctl enable --now odoo14
+  sudo systemctl status odoo14
+  ```
+- you can check message log odoo service
+  ```bash
+  sudo journalctl -u odoo14
+  ```
   
   
 
