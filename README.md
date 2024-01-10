@@ -2,15 +2,15 @@
 <p align="center"><b>Created By Ahmad Ghozali</b></p>
   
 Install Odoo 14.0
-- First Update Your apt
+- Pertama update apt kamu
   ```bash
   sudo apt update
   ```
-- Upgrade Your apt
+- Upgrade apt kamu
   ```bash
   sudo apt upgrade -y
   ```
-- Install Dependacies (fisrt check libssl1.1 *in terminal openssl version* if you have dont install)
+- Install Dependecies (pertama cek libssl1.1 *di terminal ketik "openssl version"* jika sudah ada tidak perlu di instal)
   ```bash
   sudo apt install python3-pip python3-dev python3-venv python3-wheel libxml2-dev libpq-dev libjpeg8-dev liblcms2-dev libxslt1-dev zlib1g-dev libsasl2-dev libldap2-dev build-essential git libssl-dev libffi-dev libmysqlclient-dev libjpeg-dev libblas-dev libatlas-base-dev libssl1.1
   ```
@@ -18,21 +18,21 @@ Install Odoo 14.0
   ```bash
   sudo apt install postgresql postgresql-contrib
   ```
-- setting postgresql on your PC for automatically system boot
+- atur postgresql di PC kamu agar otomatis hidup saat booting
   ```bash
   sudo systemctl enable postgresql
   sudo systemctl start postgresql
   sudo systemctl status postgresql
   ```
-- create user postgresql (*odoo14* this your user)
+- buat user baru postgresql (*odoo14* ini adalah user kamu)
   ```bash
   sudo su - postgres -c "createuser -s odoo14"
   ```
-- create user for odoo
+- buat user untuk odoo
   ```bash
   sudo useradd -m -d /opt/odoo14 -U -r -s /bin/bash odoo14
   ```
-- download wkhtmltopdf and install
+- download wkhtmltopdf dan install
   ```bash
    wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
   ```
@@ -42,51 +42,51 @@ Install Odoo 14.0
   sudo apt install ./wkhtmltox_0.12.6.1-2.jammy_amd64.deb
   sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin/wkhtmltopdf
   ```
-  and check after finish
+  dan cek setelah selesai
   ```bash
   wkhtmltopdf --version
   ```
-- Installing Odoo 14 on Ubuntu
+- Installing Odoo 14 di ubuntu
   ```bash
   sudo su - odoo14
   ```
-  download from odoo community (if you upgrade for new version you can replace name and branch 14 to new version)
+  download dari odoo community (jika kamu mau upgrade ke versi terbaru tinggal ganti branch 14 ke versi terbaru)
   ```bash
   git clone https://www.github.com/odoo/odoo --depth 1 --branch 14.0 /opt/odoo14/odoo
   ```
-  and exit after finish
+  dan keluar dari odoo di terminal
   ```bash
   exit
   ```
-- create new phyton virtual environtment
+- buat baru phyton virtual environtment
   ```bash
   sudo su
   cd /opt/odoo14
   python3 -m venv myodoo14-venv
   source myodoo14-venv/bin/activate
   ```
-  and then install odoo14 dependencies (wait until finish)
+  dan install odoo14 dependencies (wait until finish)
   ```bash
   (venv) $ pip3 install wheel
   (venv) $ pip3 install -r odoo/requirements.txt
   ```
-  and deactivate environtment
+  dan nonaktifkan environment
   ```bash
   deactivate
   ```
-- make folder for custom addons
+- buat folder baru untuk custom addons
   ```bash
   mkdir /opt/odoo14/custom-addons
   ```
-- let us exit to odoo14 user
+- sekarang keluar dari odoo14 user
   ```bash
   exit
   ```
-- create configuration file odoo14
+- buat konfigurasi file odoo14
   ```bash
   sudo nano /etc/odoo14.conf
   ```
-  - add this statement on odoo14.conf
+  - masukan perintah ini pada odoo14.conf
     ```bash
     [options]
     ;This is the password that allows database operations:
@@ -101,7 +101,7 @@ Install Odoo 14.0
     ```
     and save (Ctrl+X => Yes (Y) => Enter
     
-- create configuration service system
+- buat konfigurasi di service system
   ```bash
   sudo nano /etc/systemd/system/odoo14.service
   ```
@@ -126,19 +126,19 @@ Install Odoo 14.0
       ```
       and save (Ctrl+X => Yes (Y) => Enter
 
-- and now reload service system and enable service your odoo
+- dan nyalakan ulang service odoo kamu
   ```bash
   sudo systemctl daemon-reload
   sudo systemctl enable --now odoo14
   sudo systemctl status odoo14
   ```
-- you can check message log odoo service
+- kamu bisa cek service odoo dengan ini
   ```bash
   sudo journalctl -u odoo14
   ```
 
-- Congratulations! You have successfully installed Odoo.  *cheers*
-  - you can check your browser
+- selamat kamu telah berhasil install Odoo.
+  - kamu bisa cek di browser kamu dengan membuka localhost
     ```bash
     URL http://127.0.0.1:8069
     ```
