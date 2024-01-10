@@ -5,7 +5,7 @@ Install Odoo 14.0
 ```bash
 sudo apt update
 ```
-- Update Your apt
+- Upgrade Your apt
 ```bash
 sudo apt upgrade -y
 ```
