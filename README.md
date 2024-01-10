@@ -53,5 +53,16 @@ Install Odoo 14.0
   ```bash
   git clone https://www.github.com/odoo/odoo --depth 1 --branch 14.0 /opt/odoo14/odoo
   ```
+  and exit after finish
+  ```bash
+  exit
+  ```
+- create new phyton virtual environtment
+  ```bash
+  sudo su
+  cd /opt/odoo14
+  python3 -m venv myodoo14-venv
+  source myodoo14-venv/bin/activate
+  ```
 
 
