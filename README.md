@@ -81,5 +81,25 @@ Install Odoo 14.0
   ```bash
   exit
   ```
+- create configuration file odoo14
+  ```bash
+  sudo nano /etc/odoo14.conf
+  ```
+  - add this statement on odoo14.conf
+    ```bash
+    [options]
+    ; This is the password that allows database operations:
+    admin_passwd = admin
+    db_host = False
+    db_port = False
+    db_user = odoo14
+    db_password = False
+    xmlrpc_port = 8069
+    logfile = /var/log/odoo14/odoo.log
+    addons_path = /opt/odoo14/odoo/addons,/opt/odoo14/custom-addons
+    ```
+  
+
+
   
 
