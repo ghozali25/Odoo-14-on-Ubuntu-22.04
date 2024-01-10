@@ -1,5 +1,5 @@
 # Odoo-14.0-on-Ubuntu or Debian Based
-<p align="center"><b>Created By Ahmad Ghozali</b></p>
+<p align="center"><b>- Created By Ahmad Ghozali -</b></p>
   
 Install Odoo 14.0
 - Pertama update apt kamu
@@ -146,7 +146,7 @@ Install Odoo 14.0
 <p align="center"><img src="https://github.com/ghozali25/Odoo-14-on-Ubuntu-22.04/blob/main/odoo14.png"></p>
 
 
-<p align="center"><b>Thank For Attention</p>
+<p align="center"><b>- Thank For Attention -</p>
   
 
 
