@@ -49,7 +49,7 @@ Install Odoo 14.0
   ```bash
   sudo su - odoo14
   ```
-  download from odoo community (if you upgrade for new version you can replace name 14 to nwe version)
+  download from odoo community (if you upgrade for new version you can replace name 14 to new version)
   ```bash
   git clone https://www.github.com/odoo/odoo --depth 1 --branch 14.0 /opt/odoo14/odoo
   ```
