@@ -98,6 +98,8 @@ Install Odoo 14.0
     logfile = /var/log/odoo14/odoo.log
     addons_path = /opt/odoo14/odoo/addons,/opt/odoo14/custom-addons
     ```
+    and save (Ctrl+X => Yes (Y) => Enter
+    
 - create configuration service system
   ```bash
   sudo nano /etc/systemd/system/odoo14.service
