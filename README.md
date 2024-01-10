@@ -23,7 +23,7 @@ Install Odoo 14.0
   sudo systemctl start postgresql
   sudo systemctl status postgresql
   ```
-- create user postgresql (*odoo14 this your user)
+- create user postgresql (*odoo14* this your user)
   ```bash
   sudo su - postgres -c "createuser -s odoo14"
   ```
@@ -31,4 +31,14 @@ Install Odoo 14.0
   ```bash
   sudo useradd -m -d /opt/odoo14 -U -r -s /bin/bash odoo14
   ```
+- download wkhtmltopdf and install
+  ```bash
+ wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6.1-2/wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+  ```
+  ```bash
+  chmod +x wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+sudo apt install ./wkhtmltox_0.12.6.1-2.jammy_amd64.deb
+sudo ln -s /usr/local/bin/wkhtmltopdf /usr/bin/wkhtmltopdf
+  ```
+
 
