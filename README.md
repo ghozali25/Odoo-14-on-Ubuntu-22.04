@@ -98,6 +98,30 @@ Install Odoo 14.0
     logfile = /var/log/odoo14/odoo.log
     addons_path = /opt/odoo14/odoo/addons,/opt/odoo14/custom-addons
     ```
+- create configuration service system
+  ```bash
+  sudo nano /etc/systemd/system/odoo14.service
+  ```
+    - add this statement on odoo14.service
+      ```bash
+      [Unit]
+      Description=Odoo14
+      Requires=postgresql.service
+      After=network.target postgresql.service
+
+      [Service]
+      Type=simple
+      SyslogIdentifier=odoo14
+      PermissionsStartOnly=true
+      User=odoo14
+      Group=odoo14
+      ExecStart=/opt/odoo14/myodoo14-venv/bin/python3 /opt/odoo14/odoo/odoo-bin -c /etc/odoo14.conf
+      StandardOutput=journal+console
+      
+      [Install]
+      WantedBy=multi-user.target
+      ```
+  
   
 
 
