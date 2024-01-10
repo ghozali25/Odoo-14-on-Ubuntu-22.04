@@ -49,7 +49,7 @@ Install Odoo 14.0
   ```bash
   sudo su - odoo14
   ```
-  download from odoo community (if you upgrade for new version you can replace name 14 to new version)
+  download from odoo community (if you upgrade for new version you can replace name and branch 14 to new version)
   ```bash
   git clone https://www.github.com/odoo/odoo --depth 1 --branch 14.0 /opt/odoo14/odoo
   ```
@@ -64,5 +64,22 @@ Install Odoo 14.0
   python3 -m venv myodoo14-venv
   source myodoo14-venv/bin/activate
   ```
-
+  and then install odoo14 dependencies (wait until finish)
+  ```bash
+  (venv) $ pip3 install wheel
+  (venv) $ pip3 install -r odoo/requirements.txt
+  ```
+  and deactivate environtment
+  ```bash
+  deactivate
+  ```
+  - make folder for custom addons
+  ```bash
+  mkdir /opt/odoo14/custom-addons
+  ```
+  - let us exit to odoo14 user
+  ```bash
+  exit
+  ```
+  
 
